@@ -1,0 +1,3 @@
+BBC,http://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml?edition=int
+tportal,https://www.tportal.hr/rss-najnovije.xml
+New York Times,https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml

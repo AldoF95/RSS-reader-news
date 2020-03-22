@@ -1,0 +1,23 @@
+.tab-pane .tab-header-background{
+    -fx-background-color: #00113E;
+}
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-color: transparent;
+}
+.tab-pane .tab:selected {
+    -fx-background-color: #3c3c3c;
+}
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #96b946;
+}
+#tabAll, #tabSave{
+    -fx-min-width: 100;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-base-color: white;
+}
+
+

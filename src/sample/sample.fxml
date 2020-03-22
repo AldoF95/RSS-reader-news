@@ -1,0 +1,55 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml"
+          minWidth="1000"
+          alignment="center"
+          fx:id="mainPane"
+          style="-fx-background-color: #001245">
+
+    <GridPane GridPane.columnIndex="0"
+              GridPane.rowIndex="0"
+              minWidth="300" minHeight="500"
+              fx:id="newsButtonsPane"
+              vgap="10"
+              style="-fx-background-color: #00081E">
+
+        <TabPane GridPane.rowIndex="0"
+                 GridPane.columnIndex="0"
+                 minHeight="500" minWidth="300"
+                 tabClosingPolicy="UNAVAILABLE"
+                 fx:id="tabPaneOptions"
+                 style="-fx-background-color: #00081E">
+
+            <Tab text="Saved" fx:id="tabSave">
+                <VBox alignment="TOP_CENTER" fx:id="tabSavedLinkButtons" style="-fx-padding: 20; -fx-background-color: #00081E;"/>
+            </Tab>
+            <Tab text="All links" fx:id="tabAll">
+                <VBox alignment="TOP_CENTER" fx:id="tabAllLinksButtons" style="-fx-padding: 20; -fx-background-color: #00081E"/>
+            </Tab>
+
+        </TabPane>
+
+    </GridPane>
+
+    <GridPane GridPane.columnIndex="0" GridPane.rowIndex="1"  minWidth="300" minHeight="300" style="-fx-background-color: #00081E">
+    </GridPane>
+
+    <GridPane GridPane.columnIndex="1"
+              GridPane.rowIndex="0"
+              GridPane.rowSpan="2"
+              alignment="CENTER"
+              minWidth="800" minHeight="800"
+              fx:id="feedListPane"
+              vgap="20"
+              style="-fx-background-color: #001245; -fx-padding: 10">
+
+        <ScrollPane GridPane.columnIndex="2" GridPane.rowIndex="1" fx:id="feedScrollPane"
+                    minWidth="800" minHeight="790" hbarPolicy="NEVER" vbarPolicy="NEVER"
+                    style="-fx-background: #001245; -fx-border-color: #001245"/>
+    </GridPane>
+</GridPane>
